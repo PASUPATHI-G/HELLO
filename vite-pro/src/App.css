@@ -1,45 +1,55 @@
-/*======================
-    404 page
-=======================*/
+/* App.css */
+/* Description: This file contains the styles for the Home page of the application. */
+/* Author: Pasupathi */
+/* Date: 08-Aug-2025 */
 
-.container {
-    width: 100%;
-    height: 100%;
+
+#root {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    overflow: hidden;
 }
 
-.page_404 {
-    padding: 40px 0;
-    background: #fff;
-    font-family: "Arvo", serif;
+.layout-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - var(--scrollbar-width, 0px));
+    z-index: 1100;
+    transition: background-color .5s,border-color .5s;
+    border-bottom: 1px solid transparent;
 }
 
-.page_404 img {
-    width: 50%;
+.layout-topbar-sticky {
+    border-bottom: 1px solid var(--surface-border);
+    background-color: var(--topbar-sticky-bg);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 
-
-.four_zero_four_bg h1 {
-    font-size: 80px;
+.layout-topbar-inner {
+    height: 4rem;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.four_zero_four_bg h3 {
-    font-size: 80px;
+.layout-topbar-logo-container {
+    width: 250px;
+    margin-right: 4rem;
 }
 
-.link_404 {
-    color: #fff !important;
-    padding: 10px 20px;
-    background: #39ac31;
-    margin: 20px 0;
-    display: inline-block;
+.layout-topbar-logo {
+    height: 60px;
+    width: 60px;
 }
 
-.contant_box_404 {
-    margin-top: -50px;
-}
 
 
 .four_zero_four_bg_404 {
